@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    position: relative;
+    text-align: justify;
+    letter-spacing: 1px;
+    height: 8em;
+    padding: 1%;
+    background: #2c3e50;
+    color: #fff;
+    /* font-size: 25px; */
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+header h1{
+    top: 25%;
+    transition: 2s;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+header h1:hover{
+    transition: 2s;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    transform: rotate(360deg);
+}
+header h1,
+header nav {
+    display: inline-block;
+}
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+header a{
+    transition: 0.5s;
+    color: red;
+    font-size: 50px;
+}
+header a:hover{
+    transition: 0.5s;
+    text-shadow: rgb(231, 12, 12) 1px 0 10px;
+}
+
+header input[value='signIn']{
+    cursor: pointer;
+    background-color: #2179b4;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold!important;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+}
+header input[value='signIn']:hover{
+    background-color: #1d6b9e;
+}
+
+header input[value='signUp']{
+    cursor: pointer;
+    background-color: #27ae60;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold!important;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+}
+header input[value='signUp']:hover{
+    background-color: #239653;
+}
+header input[value='Exit']{
+    cursor: pointer;
+    background-color: #ae2727;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold!important;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+}
+header input[value='Exit']:hover{
+    background-color: #ca2929;
+}
+
+.username{
+    cursor: pointer;
+    transition: 0.5s;
+    width: 100%;
+    font-size: 25px;
+    position: relative;
+}
+.username::after{
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    /* transition: 0.5s; */
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.username:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+/* .username:hover{
+    transition: 0.5s;
+    font-size: 25px;
+    transform: translate(-10px,0);
+    text-decoration: underline;
+} */

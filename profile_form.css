@@ -1,0 +1,215 @@
+/* Profile form */
+.profile_form_area{
+    visibility: hidden;
+    display: flex;
+    opacity: 0;
+}
+
+.profile_form_area.show{
+    visibility: visible;
+    display: flex;
+    opacity: 1;
+}
+
+.profile_form_area .profile_form{
+    
+    background-color: rgb(182, 182, 182);
+    width: 900px;
+    height: 280px;
+    position: fixed;
+    z-index: 998;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 10px;
+    border-radius: 12px;
+}
+
+.profile_form .top_closeBtn{
+    display: flex;
+    flex-direction: row-reverse;
+    /* height: 4%; */
+}
+
+.profile_form .top_closeBtn button{
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(204, 29, 29);
+}
+
+.form_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile_data_part{
+    background-color: rgb(196, 158, 125);
+    height: 194px;
+    border-radius: 12px;
+    padding: 5px;
+    /* color: rgb(238, 100, 36); */
+}
+
+.profile_data{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 50px;
+    font-size: 20px;
+    /* border: 1px solid black; */
+}
+
+.profile_data label{
+    margin-top: 10px;
+}
+
+.calendars_data{
+    display: flex;
+    flex-direction: column;
+    margin-right: 59px;
+}
+
+.addCalendarBtn{
+    cursor: pointer;
+    background-color: rgb(2, 153, 2);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.user_calendars{
+    background-color: rgb(109, 109, 109);
+    color: white;
+    margin-top: 10px;
+    border-radius: 12px;
+    padding: 5px;
+    max-height: 110px;
+    font-size: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+/* Calendar form */
+.calendar_form_area{
+    visibility: hidden;
+    display: flex;
+    opacity: 0;
+}
+
+.calendar_form_area.show{
+    visibility: visible;
+    display: flex;
+    opacity: 1;
+}
+
+.calendar_form{
+    display: flex;
+    background-color: rgb(182, 182, 182);
+    width: 900px;
+    height: 400px;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calendar_form_content{
+
+}
+
+.calendar_form input[name="title"]{
+    margin-bottom: 10px;
+}
+
+.calendar_form input[type="text"]{
+    font-size: 20px;
+    width: 300px;
+    height: 40px;
+}
+
+.user_calendar label{
+    cursor: pointer;
+}
+.user_calendar label:hover{
+    background-color: rgb(199, 198, 198);
+}
+
+.available_users_list{
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 20px;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+    /* max-width: 400px; */
+}
+
+.available_users_list li{
+    cursor: pointer;
+}
+.available_users_list li:hover{
+    background-color: rgb(201, 200, 200);;
+}
+.available_users_list li.selected{
+    background-color: rgba(114, 123, 255, 0.651);;
+}
+
+.buttons_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add_user{
+    cursor: pointer;
+    background-color: rgb(2, 153, 2);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.change_user_role{
+    cursor: pointer;
+    background-color: rgb(233, 112, 13);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.del_user{
+    cursor: pointer;
+    background-color: rgb(223, 20, 20);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.calendar_form_saveBtn{
+    cursor: pointer;
+    background-color: rgb(62, 44, 224);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    color: white;
+}
+
+.calendar_form_cancelBtn{
+    cursor: pointer;
+    background-color: rgb(175, 28, 28);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
